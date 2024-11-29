@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Registration form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href="form.css">
+    <script src='form.js' defer></script>
+</head>
+<body>
+    <div class="registration-form">
+        <h1>Registration form</h1>
+        <form action="a" method="post">
+            <div class="form-section" id="section-1">
+                <p>First name:</p>
+                <input type="text" name="first name" placeholder="Enter First Name">
+                <p>Last Name:</p>
+                <input type="text" name="last name" placeholder="Enter Last Name">
+                <p>Phone Number:</p>
+                <input type="text" name="phone number" placeholder="Enter Phone Number">
+                <p>Email Address:</p>
+                <input type="text" name="email address" placeholder="Enter Email Address">
+                <button type="button" class="next-btn" onclick="showSection(2)">Next</button>
+            </div>
+            <div class="form-section" id="section-2" style="display:none;">
+                <p>Gender</p>
+                <div class="custom_select">
+                    <select>
+                        <option value="">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <p>Date Of Birth</p>
+                <select name="month">
+                    <option value="month">Month</option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                </select>
+                <select name="days">
+                    <option value="days">Days</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <select name="year">
+                    <option value="year">Year</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                </select>
+                <p>Favorite color</p>
+                <input type="text" name="favorite color" placeholder="Favorite color">
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms">I agree to the terms and conditions</label>
+                <br>
+                <button type="button" class="back-btn" onclick="showSection(1)">Back</button>
+                <input type="submit" value="Register" class="btn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
